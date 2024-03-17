@@ -54,7 +54,7 @@ countryList.addEventListener('click', (event) => {
     if (countryItem) {
         const name = countryItem.querySelector('.country-name').textContent;
         localStorage.setItem('country-details', JSON.stringify([name]));
-        window.location.href = `/detail.html`;
+        window.location.pathname = `/detail.html`;
     }
 });
 
